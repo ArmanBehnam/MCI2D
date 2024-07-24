@@ -1,25 +1,57 @@
-# Welcome to Arman Behnam NLP repository
+# MCI Progression Analysis using Graph Neural Networks Explanation
 
-Here are some courses that I've shared with U to help broaden our knowledge.
-Courses are categorized into four parts: [Coursera](https://www.coursera.org/learn/convolutional-neural-networks), [Udemy](https://www.udemy.com/), [Udacity](https://www.udacity.com/), [Interdisciplinary schools](https://github.com/ArmanBehnam/Courses/tree/master/Interdisciplinary%20schools%20-%20Neuroscience)
+This repository contains code and analysis for studying Mild Cognitive Impairment (MCI) progression using Graph Neural Networks (GNNs) explanation methods.
 
-`Sharing Lnowledge` is a **sacred** job and I'll appreciate this repository will be useful.(Especially in the field of AI and Data science)
+## Overview
 
+We analyze MCI progression and reversion using temporal medical data. Our approach involves data preprocessing, GNN training, and applying various GNN explanation methods to understand the factors influencing MCI transitions.
 
-- Reach my [Coursera](https://github.com/ArmanBehnam/Courses/tree/master/Coursera) experience
-  - Courses:  Hundreds of free courses give you access to on-demand video lectures, homework exercises, and community discussion forums. Paid courses provide additional quizzes and projects as well as a shareable Course Certificate upon completion.
-  - Guided Projects: are self-paced, require a smaller time commitment, and provide practice using tools in real-world scenarios, so you can build the job skills you need, right when you need them.
-  - Specializations: tackle hands-on projects based on real business challenges, and earn a Specialization Certificate to share with your professional network and potential employers.
-- Reach my [Udemy](https://github.com/ArmanBehnam/Courses/tree/master/Udemy) experience
-- The leading global marketplace for learning and instruction; by connecting students all over the world to the best instructors, Udemy is helping individuals reach their goals and pursue their dreams.
-- Reach my [Udacity](https://github.com/ArmanBehnam/Courses/tree/master/Udacity) experience
-  - Learn by doing
-  - Practitioner-level skills
-  - Job-focused content
-  - Real human help
-  - Personalized code reviews
-  - Real-life projects
-- Reach my [Interdisciplinary schools](https://github.com/ArmanBehnam/Courses/tree/master/Interdisciplinary%20schools%20-%20Neuroscience) experience
-  - Analysis and discussing [Neuroscience and Cognitive science](http://www.armanbehnam.com/about-me/education/information/neuroscience/) in my website
+## Key Components
 
-# THANK YOU
+1. Data Preprocessing
+   - Temporal ordering of patient visits
+   - Missing data imputation using MICE and KNN
+
+2. GNN Training
+   - Models: GCN, T-GCN, GAT, GraphSage
+   - Classification task: Predicting disease progression stages
+
+3. GNN Explanation Methods
+   - Guided Backpropagation (Guidedbp)
+   - GNNExplainer
+   - PGMExplainer
+   - RCExplainer
+
+4. MCI Progress and Reversion Analysis
+   - Study of main nodes and their values over time
+
+## Results
+
+- GNN performance metrics (Accuracy, F1 score, AUROC, Precision)
+- Causal subgraph visualization
+- Clinical findings on MCI transitions
+- Evaluation of GNN explanation methods (GES, GEA, GEF)
+- Gender role analysis in MCI transitions
+
+## Evaluation Metrics
+
+We use the following metrics to evaluate our GNN explanation methods:
+- Graph Explanation Accuracy (GEA)
+- Graph Explanation Faithfulness (GEF)
+- Graph Explanation Stability (GES)
+
+## Usage
+
+[Include instructions on how to run the code, any dependencies, and data requirements]
+
+## Contributing
+
+[Include guidelines for contributing to the project]
+
+## License
+
+[Specify the license under which this project is released]
+
+## Contact
+
+[Provide contact information for the project maintainers]
