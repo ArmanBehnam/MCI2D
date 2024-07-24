@@ -1,4 +1,4 @@
-# MCI Progression Analysis using Graph Neural Networks Explanation
+# MCI Progression Analysis by GNN Explanation
 
 This repository contains code and analysis for studying Mild Cognitive Impairment (MCI) progression using Graph Neural Networks (GNNs) explanation methods.
 
