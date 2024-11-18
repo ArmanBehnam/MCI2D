@@ -41,15 +41,15 @@ We analyze MCI progression and reversion using temporal medical data through a n
 
 | Method    | Accuracy | F-1 Score | AUROC | Precision |
 |-----------|----------|-----------|--------|-----------|
-| T-GCN     | 0.724    | 0.700     | 0.639  | 0.694     |
-| GAT       | 0.346    | 0.372     | 0.723  | 0.786     |
+| T-GCN     | **0.724**    | **0.700**     | 0.639  | 0.694     |
+| GAT       | 0.346    | 0.372     | **0.723**  | **0.786**    |
 | GraphSage | 0.356    | 0.399     | 0.564  | 0.775     |
 
 ### Explanation Method Evaluation
 
 | Method        | GES  | GEA  | GEF   |
 |---------------|------|------|--------|
-| CXGNN        | 1.00 | 0.78 | 0.001  |
+| CXGNN        | **1.00** | **0.78** | **0.001**  |
 | Guidedbp     | 0.64 | 0.22 | 8.600  |
 | GNNExplainer | 0.21 | 0.22 | 5.350  |
 | IG           | 0.29 | 0.10 | 11.330 |
@@ -141,6 +141,4 @@ This study was supported by:
 
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_twitter) - email@example.com
-
-Project Link: [https://github.com/username/mci-progression-analysis](https://github.com/username/mci-progression-analysis)
+Arman Behnam - abehnam@hawk.iit.edu
