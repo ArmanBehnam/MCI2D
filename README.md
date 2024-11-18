@@ -195,7 +195,7 @@ Direct connections with sex (edge weights):
 
 ## Acknowledgments
 
-This study was supported byEric & Wendy Schmidt Fund for AI Research & Innovation, Mayo Clinic Study of Aging (NIH Grants U01 AG006786, P50 AG016574, R01AG057708)
+This study was supported by Eric & Wendy Schmidt Fund for AI Research & Innovation, Mayo Clinic Study of Aging (NIH Grants U01 AG006786, P50 AG016574, R01AG057708).
 
 ## Contact
 
