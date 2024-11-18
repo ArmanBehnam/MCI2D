@@ -202,10 +202,6 @@ Direct connections with sex (edge weights):
 - Generalizability concerns due to Midwestern population focus (MCSA cohort)
 - Potential unmeasured confounders
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
 ## Acknowledgments
 
 This study was supported byEric & Wendy Schmidt Fund for AI Research & Innovation, Mayo Clinic Study of Aging (NIH Grants U01 AG006786, P50 AG016574, R01AG057708)
