@@ -11,7 +11,7 @@ We analyze MCI progression and reversion using temporal medical data through a n
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/username/mci-progression-analysis.git
+git clone https://github.com/ArmanBehnam/MCI2D/tree/main.git
 cd mci-progression-analysis
 ```
 
@@ -29,21 +29,20 @@ pip install -r requirements.txt
 ## Usage
 
 1. Prepare your data:
-   - Place your processed data file in the `data/` directory
    - File should be in CSV format with columns for features and 'group' labels
 
 2. Run the main analysis:
 ```python
 from mci_analysis.utils.preprocessing import preprocess
 from mci_analysis.models.graph_sage import model_SAGE
-from mci_analysis.analysis.causal_analysis import implementation
+from mci_analysis.src.causal_analysis import implementation
 import pickle
 
 # Process the data
-X, y, G, *_ = preprocess('data/processed_data.csv')
+X, y, G, *_ = preprocess('data.csv')
 
 # Save the graph
-with open('data/graph.pkl', 'wb') as f:
+with open('graph.pkl', 'wb') as f:
     pickle.dump(G, f)
 
 # Train the model
@@ -55,10 +54,10 @@ models, *results = implementation(G, y, num_epochs=20)
 
 3. Run comprehensive network analysis:
 ```python
-from mci_analysis.analysis.network_analysis import comprehensive_sexc_analysis
+from mci_analysis.src.network_analysis import comprehensive_sexc_analysis
 
 # Load preprocessed graph
-with open('data/graph.pkl', 'rb') as f:
+with open('graph.pkl', 'rb') as f:
     G = pickle.load(f)
 
 # Run analysis
@@ -79,8 +78,8 @@ from mci_analysis.utils.preprocessing import preprocess
 from mci_analysis.utils.visualization import visualize
 
 # Load and process data
-df = pd.read_csv('data/processed_data.csv')
-X, y, G, *_ = preprocess('data/processed_data.csv')
+df = pd.read_csv('data.csv')
+X, y, G, *_ = preprocess('data.csv')
 
 # Print group statistics
 print(f"Group distribution:\n{df['group'].value_counts()}")
