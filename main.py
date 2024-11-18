@@ -7,8 +7,8 @@ from pathlib import Path
 from utils.preprocessing import preprocess
 from utils.visualization import visualize, visualize_results
 from models.graph_sage import model_SAGE
-from analysis.causal_analysis import implementation
-from analysis.network_analysis import comprehensive_network_analysis, print_analysis_results
+from src.causal_analysis import implementation
+from src.network_analysis import comprehensive_network_analysis, print_analysis_results
 
 def parse_args():
     parser = argparse.ArgumentParser(description='MCI Progression Analysis')
@@ -107,6 +107,3 @@ def main():
     for node, exp in sorted(results['expressivity'].items(), 
                           key=lambda x: x[1], reverse=True)[:5]:
         print(f"{node}: {exp:.4f}")
-
-if __name__ == "__main__":
-    main()
