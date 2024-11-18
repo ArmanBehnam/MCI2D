@@ -117,7 +117,7 @@ The analysis generates several output files:
 - `expressivity_group1_vs_others.png`: Node expressivity distribution
 - `gnn_model1.pth`: Trained GNN model weights
 - `graph1.pkl`: Processed graph structure
-- 
+
 ## Key Components
 
 ### 1. Data Preprocessing
@@ -201,34 +201,6 @@ Direct connections with sex (edge weights):
 - Sample size limitations (n=369)
 - Generalizability concerns due to Midwestern population focus (MCSA cohort)
 - Potential unmeasured confounders
-- Need for external validation
-- 
-## Project Structure
-MCI_CAUSALGNN/
-│
-├── data/
-│   └── processed_data.csv
-│
-├── models/
-│   ├── __init__.py
-│   ├── gnn.py
-│   ├── ncm.py
-│   └── graph_sage.py
-│
-├── utils/
-│   ├── __init__.py
-│   ├── preprocessing.py
-│   └── visualization.py
-│
-├── analysis/
-│   ├── __init__.py
-│   ├── causal_analysis.py
-│   └── network_analysis.py
-│
-├── requirements.txt
-├── setup.py
-├── README.md
-└── main.py
 
 ## License
 
@@ -236,13 +208,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-This study was supported by:
-- NIA R01 AG068007
-- Eric & Wendy Schmidt Fund for AI Research & Innovation
-- Mayo Clinic Study of Aging (NIH Grants U01 AG006786, P50 AG016574, R01AG057708)
-- GHR Foundation
-- Mayo Foundation for Medical Education and Research
-- Rochester Epidemiology Project (R01 AG034676)
+This study was supported byEric & Wendy Schmidt Fund for AI Research & Innovation, Mayo Clinic Study of Aging (NIH Grants U01 AG006786, P50 AG016574, R01AG057708)
 
 ## Contact
 
