@@ -109,14 +109,6 @@ if __name__ == "__main__":
     visualize_results(G, results[-1], y)
 ```
 
-## Output Files
-
-The analysis generates several output files:
-- `figure1.png`: Graph visualization
-- `expressivity_group1_vs_others.png`: Node expressivity distribution
-- `gnn_model1.pth`: Trained GNN model weights
-- `graph1.pkl`: Processed graph structure
-
 ## Key Components
 
 ### 1. Data Preprocessing
