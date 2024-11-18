@@ -82,5 +82,3 @@ def print_analysis_results(results):
     print("\n1. Direct Connections:")
     print(f"Number of direct connections: {len(results['direct_connections'])}")
     print(f"Nodes: {', '.join(results['direct_connections'])}")
-    
-    print
