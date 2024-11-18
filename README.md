@@ -4,8 +4,11 @@
 
 This repository contains code and analysis for studying Mild Cognitive Impairment (MCI) progression using Graph Neural Networks (GNNs) explanation methods, with a focus on causal relationships and explainability.
 
-We analyze MCI progression and reversion using temporal medical data through a novel approach combining GNNs with causal explanation methods. Our research focuses on identifying key factors influencing MCI transitions and understanding their causal relationships. [**Video**](https://www.youtube.com/watch?v=TGNxpDf3Hyk) and paper 
+We analyze MCI progression and reversion using temporal medical data through a novel approach combining GNNs with causal explanation methods. Our research focuses on identifying key factors influencing MCI transitions and understanding their causal relationships. 
 
+## [Video](https://www.youtube.com/watch?v=TGNxpDf3Hyk)
+
+## [Paper](https://www.youtube.com/watch?v=TGNxpDf3Hyk)
 
 ## Installation
 
