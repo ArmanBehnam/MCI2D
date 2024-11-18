@@ -90,40 +90,33 @@ Direct connections with sex (edge weights):
 - Generalizability concerns due to Midwestern population focus (MCSA cohort)
 - Potential unmeasured confounders
 - Need for external validation
-
-## Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/username/mci-progression-analysis.git
-
-# Navigate to the project directory
-cd mci-progression-analysis
-
-# Install required packages
-pip install -r requirements.txt
-```
-
-## Usage
-
-```python
-# Example code for running the analysis
-from mci_analysis import GNNAnalyzer
-
-# Initialize the analyzer
-analyzer = GNNAnalyzer()
-
-# Run the analysis
-results = analyzer.run()
-```
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+- 
+## Project Structure
+MCI_CAUSALGNN/
+│
+├── data/
+│   └── processed_data.csv
+│
+├── models/
+│   ├── __init__.py
+│   ├── gnn.py
+│   ├── ncm.py
+│   └── graph_sage.py
+│
+├── utils/
+│   ├── __init__.py
+│   ├── preprocessing.py
+│   └── visualization.py
+│
+├── analysis/
+│   ├── __init__.py
+│   ├── causal_analysis.py
+│   └── network_analysis.py
+│
+├── requirements.txt
+├── setup.py
+├── README.md
+└── main.py
 
 ## License
 
