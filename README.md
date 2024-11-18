@@ -6,6 +6,118 @@ This repository contains code and analysis for studying Mild Cognitive Impairmen
 
 We analyze MCI progression and reversion using temporal medical data through a novel approach combining GNNs with causal explanation methods. Our research focuses on identifying key factors influencing MCI transitions and understanding their causal relationships.
 
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/username/mci-progression-analysis.git
+cd mci-progression-analysis
+```
+
+2. Create and activate a virtual environment:
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+3. Install the required packages:
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+1. Prepare your data:
+   - Place your processed data file in the `data/` directory
+   - File should be in CSV format with columns for features and 'group' labels
+
+2. Run the main analysis:
+```python
+from mci_analysis.utils.preprocessing import preprocess
+from mci_analysis.models.graph_sage import model_SAGE
+from mci_analysis.analysis.causal_analysis import implementation
+import pickle
+
+# Process the data
+X, y, G, *_ = preprocess('data/processed_data.csv')
+
+# Save the graph
+with open('data/graph.pkl', 'wb') as f:
+    pickle.dump(G, f)
+
+# Train the model
+sage_model = model_SAGE(data)
+
+# Run causal analysis
+models, *results = implementation(G, y, num_epochs=20)
+```
+
+3. Run comprehensive network analysis:
+```python
+from mci_analysis.analysis.network_analysis import comprehensive_sexc_analysis
+
+# Load preprocessed graph
+with open('data/graph.pkl', 'rb') as f:
+    G = pickle.load(f)
+
+# Run analysis
+comprehensive_sexc_analysis(G, target_node='sexc')
+```
+
+4. Visualize results:
+```python
+from mci_analysis.utils.visualization import visualize_results
+visualize_results(G, expressivity, y)
+```
+
+## Example Scripts
+
+### Basic Analysis
+```python
+from mci_analysis.utils.preprocessing import preprocess
+from mci_analysis.utils.visualization import visualize
+
+# Load and process data
+df = pd.read_csv('data/processed_data.csv')
+X, y, G, *_ = preprocess('data/processed_data.csv')
+
+# Print group statistics
+print(f"Group distribution:\n{df['group'].value_counts()}")
+print(f"Number of nodes most effective for group 1: {(y == 1).sum()}")
+print(f"Number of nodes most effective for group 2: {(y == 2).sum()}")
+print(f"Number of nodes most effective for group 3: {(y == 3).sum()}")
+
+# Visualize the graph
+visualize(G)
+```
+
+### Full Analysis Pipeline
+```python
+if __name__ == "__main__":
+    # Load preprocessed graph
+    with open('data/graph.pkl', 'rb') as f:
+        G = pickle.load(f)
+    
+    # Get node labels
+    y = pd.Series({node: G.nodes[node]['label'] for node in G.nodes()})
+    
+    # Run implementation
+    results = implementation(G, y, num_epochs=20)
+    
+    # Analyze and visualize results
+    print_results(G, *results)
+    visualize_results(G, results[-1], y)
+```
+
+## Output Files
+
+The analysis generates several output files:
+- `figure1.png`: Graph visualization
+- `expressivity_group1_vs_others.png`: Node expressivity distribution
+- `gnn_model1.pth`: Trained GNN model weights
+- `graph1.pkl`: Processed graph structure
+- 
 ## Key Components
 
 ### 1. Data Preprocessing
